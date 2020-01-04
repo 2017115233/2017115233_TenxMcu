@@ -8,14 +8,11 @@
 #define D_1000ms 1000
 // Globle Var -----------------------------------------
 #ifdef __main_c
-bit bLedFlash;
-bit b4ms;
-uint8_t tick;
+bit bLedFlash ;
 #else
-extern bit b4ms;
 extern bit bLedFlash;
-extern uint8_t tick;
 #endif
+static uint16_t ledflg = 0;
 
 // Action Macro: exp: #define F_getData() ------
 
